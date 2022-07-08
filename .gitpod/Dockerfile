@@ -1,4 +1,3 @@
-FROM gitpod/workspace-full
+FROM jenkins/jenkins:lts-jdk11
 
-RUN brew install gh && \
-    bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh && sdk install maven 3.8.4 && sdk default maven 3.8.4"
+RUN jenkins-plugin-cli --plugins pipeline-model-definition github-branch-source:1.8
