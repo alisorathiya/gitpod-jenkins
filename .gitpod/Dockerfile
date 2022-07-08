@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full
+FROM gitpod/workspace-java-11
 
 RUN brew install gh && \
     bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh && sdk install maven 3.8.4 && sdk default maven 3.8.4"
