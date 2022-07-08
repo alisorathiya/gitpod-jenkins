@@ -1,5 +1,5 @@
 FROM jenkins/jenkins:lts-jdk11
 
 # RUN jenkins-plugin-cli --plugins pipeline-model-definition github-branch-source:1.8
-RUN mkdir /sys/fs/cgroup/systemd && \
+RUN mkdir -p /sys/fs/cgroup/systemd && \
     mount -t cgroup -o none,name=systemd cgroup /sys/fs/cgroup/systemd
