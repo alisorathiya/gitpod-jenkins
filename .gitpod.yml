@@ -1,11 +1,14 @@
+# https://www.gitpod.io/docs/config-gitpod-file
+
 tasks:
   - init: cd .gitpod && docker-compose pull
   - command: cd .gitpod && docker-compose up
 
 github:
+  # https://www.gitpod.io/docs/prebuilds/#configure-prebuilds
   prebuilds:
     pullRequestsFromForks: true
     addBadge: true
 
 image:
-  file: .gitpod/Dockerfile
+  file: Dockerfile
