@@ -1,4 +1,5 @@
-# jenkins-gitpod
-Let's try to have a complete Jenkins environment with GitPod.
+# gitpod-jenkins
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gounthar/jenkins-gitpod/edit/main/README.md)
+Open Jenkins in Gitpod.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/shenxianpeng/gitpod-jenkins)
