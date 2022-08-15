@@ -9,13 +9,13 @@ services:
      - 50000:50000
     container_name: jenkins
     volumes:
-      - jenkins_home:/var/jenkins_home
+      - /home/jenkins_home:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
   agent:
     image: jenkins/ssh-agent:jdk11
     privileged: true
     user: root
-    container_name: jenkins_agent
+    container_name: agent
     expose:
       - 22
     environment:
