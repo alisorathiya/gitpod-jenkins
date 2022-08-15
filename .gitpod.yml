@@ -1,29 +1,11 @@
 tasks:
-  - init: |
-      cd .gitpod && docker-compose pull
-  - command: |
-      cd .gitpod && docker-compose up
+  - init: cd .gitpod && docker-compose pull
+  - command: cd .gitpod && docker-compose up
 
 github:
   prebuilds:
     pullRequestsFromForks: true
     addBadge: true
-
-jetbrains:
-  intellij:
-    plugins:
-      - Stapler plugin for IntelliJ IDEA
-    prebuilds:
-      version: stable
-
-vscode:
-  extensions:
-    - vscjava.vscode-java-pack
-    - redhat.java
-    - vscjava.vscode-java-debug
-    - vscjava.vscode-java-dependency
-    - vscjava.vscode-java-test
-    - vscjava.vscode-maven
 
 image:
   file: .gitpod/Dockerfile
