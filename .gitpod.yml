@@ -10,5 +10,9 @@ github:
     pullRequestsFromForks: true
     addBadge: true
 
+vscode:
+  extensions:
+    - ms-azuretools.vscode-docker
+
 image:
   file: Dockerfile
